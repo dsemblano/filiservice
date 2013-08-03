@@ -1,0 +1,12 @@
+#login h1 a {
+	background-color: #3B9BC5;
+    background-image: url("assets/images/logo-filiservice.png") !important;
+    background-position: 5px 10px;
+    background-size: contain;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 10px 10px 5px rgba(200, 200, 200, 0.7);
+    height: 120px !important;
+    padding: 0;
+    width: 325px;
+	}
