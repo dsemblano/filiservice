@@ -359,10 +359,9 @@ a {
 a:visited {
 	/*color: purple;*/
 }
-a:hover,
-a:focus,
-a:active {
+a:hover {
 	/*color: midnightblue;*/
+	color: #999999;
 	text-decoration: underline;
 }
 
@@ -491,6 +490,10 @@ a:active {
     color: #FFFFFF;
 }
 
+#masthead .site-branding a:hover {
+	text-decoration: none;
+}
+
 /* =Menu
 ----------------------------------------------- */
 
@@ -600,7 +603,6 @@ a:active {
 	display: inline;
 }
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
 }
@@ -716,6 +718,11 @@ a:active {
 
 /* Página Fabricantes */
 
+.current-menu-item {
+	border-bottom: 5px solid #0071BD;
+	text-align: center; 
+}
+
 /* -- FLUID GRID STYLES -- */
 
 #Grid {
@@ -741,14 +748,10 @@ ul#Grid li:nth-child(1){
 
 }
 
-#Grid li h4 {
+#Grid li h4, .entry-title {
     color: #FA941D;
-    font-size: 15px;
-}
-
-#Grid li h4:hover {
-	text-shadow: 0px 1px 0px #db7100;
-    filter: dropshadow(color=#db7100, offx=0, offy=1);
+    font-size: 2rem;
+	text-align: left;
 }
 
 #Grid:after {
@@ -797,6 +800,16 @@ ul#Grid li:nth-child(1){
   }
 }
 
+#breadcrumbs, #breadcrumbs a {
+	font-size: 0.85em;
+	/*color: #FA941D;*/
+	color: #808080; 
+}
+
+#breadcrumbs a:hover, #fabricante-lista li a h3:hover {
+	text-decoration: underline;
+}
+
 
 /* =Página Produtos
 ----------------------------------------------- */
@@ -843,7 +856,7 @@ article.produtos {
 article.produtos figure {
     /*background-color: yellowgreen;*/
     float: left;
-    width: 55%;
+    width: 50%;
 }
 
 .entry-header {
@@ -861,7 +874,7 @@ article.produtos figure {
 article.produtos .entry-content {
     /*background-color: yellow;*/
     float: right;
-    width: 38.5%;
+    width: 45%;
 }
 
 article.produtos .entry-title {
@@ -889,6 +902,10 @@ article.produtos .entry-title {
 	color: #FA941D;
 	font-size: 0.7em;
 	font-weight: bold;
+}
+
+.entry-tax-outros a, #nav-below a {
+	color: #FA941D;
 }
 
 
@@ -948,7 +965,7 @@ aside#sidebar-left hr{
 }
 
 aside#sidebar-left h6{
-    margin: 5px 0;
+    margin: 0 0 10px;
 }
 
 aside#sidebar-left #searchform {
@@ -1011,7 +1028,7 @@ SEARCH FORM
 
 .descricao_home p{
     min-height: 90px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 5px 15px 0;
 }
 
@@ -1149,6 +1166,7 @@ object {
 
 /* Make sure select elements fit in widgets */
 .widget select {
+    padding: 3px;
 	max-width: 100%;
 	width: 100%;
 }
