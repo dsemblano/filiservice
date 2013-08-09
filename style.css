@@ -830,17 +830,45 @@ PAGINAS
 
 /* Pagina Contato */
 
-.wpcf7 {
-    float: right;
+#contato-wrapper {
+	float: left;
+	width: 50%;
 }
 
-#mapa-contato {
+.wpcf7 {
+	float: right;
+	width: 38%;
 }
+
+.wpcf7-form-control-wrap input { margin: 0 0 20px; width: 100%; }
+
+#mapa-contato { float: left; }
 
 .mapp-layout {
 	margin: 0;
 	padding: 0;
 }
+
+#hcard-contato {
+	/*background-color: green;*/
+	display: inline-block;
+	float: right;
+	font-size: small;
+	margin-top: 10%;
+	text-align: right;
+	vertical-align: bottom;
+	width: 50%;
+}
+
+#hcard-contato * {
+    display: inline;
+    text-align: right;
+}
+
+.wpcf7 textarea { margin-top: 20px; }
+
+.given-name { font-weight: bold; }
+.wpcf7 .invalid { float: right; }
 
 /* 
 POSTS
