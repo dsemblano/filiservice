@@ -830,6 +830,19 @@ PAGINAS
 
 /* Pagina Contato */
 
+.pagina-contato {
+	background-color: #0071BD;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding: 3px 5px 3px 10px;
+	text-transform: uppercase;
+	width: 50%;
+}
+
+.pagina-contato i.icon-comment { margin-left: 10%; }
+
 #contato-wrapper {
 	float: left;
 	width: 50%;
@@ -853,19 +866,17 @@ PAGINAS
 	/*background-color: green;*/
 	display: inline-block;
 	float: right;
-	font-size: small;
-	margin-top: 10%;
+	font-size: 1.2rem;
+	margin-top: 25%;
 	text-align: right;
 	vertical-align: bottom;
-	width: 50%;
+	width: 45%;
 }
 
 #hcard-contato * {
     display: inline;
     text-align: right;
 }
-
-.wpcf7 textarea { margin-top: 20px; }
 
 .given-name { font-weight: bold; }
 .wpcf7 .invalid { float: right; }

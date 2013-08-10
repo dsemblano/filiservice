@@ -118,6 +118,7 @@ function filiservice_scripts() {
 	}
 	
 	wp_enqueue_style( 'filiservice-style', get_stylesheet_uri() );
+	wp_enqueue_style('font-awesome', get_template_directory_uri().'/assets/fonts/font-awesome/css/font-awesome.min.css');
 
 	wp_enqueue_script( 'filiservice-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
