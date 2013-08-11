@@ -511,7 +511,6 @@ a:hover {
 	padding-left: 0;
 }
 .main-navigation li {
-	float: left;
 	position: relative;
 	height: 15px;
 	display: inline-block;
@@ -680,7 +679,7 @@ a:hover {
 
 .flex-control-nav li {    
     display: inline;
-    margin: 1px !important;
+    margin: 5px !important;
 }
 
 .flex-control-paging li a:hover, .flex-control-paging li a.flex-active {
@@ -984,8 +983,7 @@ aside#sidebar-left img {
 
 aside#sidebar-left #sidebar-left-wrapper {
 	float: left;
-	margin-top: 5px;
-    padding: 5px 15px 0;
+    padding: 0px 15px 0;
 	font-size: 0.8em;
 }
 
@@ -1227,4 +1225,145 @@ object {
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer {
 	display: block;
+}
+
+
+/* =Media Queries
+----------------------------------------------- */
+
+/* iPads (portrait and landscape) ———– */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+	/*header#masthead { text-indent: 3%; }*/
+	/*body { background-color: red; }	*/
+	.centralizar { margin: 0 3% auto }
+	#footer-img { display: none; }
+	.content-area { width: 95%; }
+	.flexslider h5.gallery-title { font-size: 1.5em; }
+	aside#sidebar-left { width: 32.5%; }
+	#first_content { height: 342px; margin-top: 10px; }
+	header#masthead { background: url("assets/images/background-header.jpg") no-repeat scroll 0 0 transparent; }
+	header#masthead hr { background: url("assets/images/header-yellow.png") no-repeat scroll 0 0 transparent; margin-bottom: 0; }
+	select#qmt-fabricantes { font-size: 0.85em; }
+	aside#sidebar-left { height: auto; }
+	aside#sidebar-left h4 { font-size: 1.3em; }
+	aside#sidebar-left h4 { text-indent: 10px; }
+	aside#sidebar-left #sidebar-left-wrapper, #busca_encontre, aside#sidebar-left h6 { margin: 0;}
+	aside#sidebar-left hr { margin: 5px 0; }
+	aside#sidebar-left #sidebar-left-wrapper { padding: 5px 10px 0; height: 180px; }
+	.descricao_home { width: 32.7%; }	
+	.flexslider { width: 66.5%; }
+	.flex-caption { font-size: 0.6em; padding: 5px 0 0 10px; }
+	.flex-control-nav { bottom: 70px !important;	}	
+	.descricao_home h2 { font-size: 2.5rem; }
+	.descricao_home p { font-size: 1.3rem; }
+	#Grid { background-color: red; }
+	#Grid li { height: 340px !important; }
+	#Grid li:last-child { float: right; margin: 0 0 0 5px; }
+	#searchform #s { width: 78%; }
+}
+
+/* iPads (landscape) ———– */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+	#masthead .adr { margin: 0; }
+	#masthead .vcard {
+	    top: 12%;
+		font-size: 1rem;
+	}
+	#masthead .vcard .tel { }
+}
+
+/* iPads (portrait) ———– */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+	#masthead .adr { margin: 0 0 -5px; }
+	#masthead .vcard {
+	    top: 7%;
+		font-size: 1rem;
+	}
+	#masthead .vcard .tel { }
+}
+
+/* Desktops and laptops ———– */
+@media only screen
+and (min-width : 1224px) {
+}
+
+	/* Mac Pro */
+@media only screen
+and (width : 1280px) {
+	body { background-color: orange; }
+	header#masthead { background: url("assets/images/background-header.jpg") no-repeat scroll 0 0 transparent; }
+	header#masthead hr { background: url("assets/images/header-yellow.png") no-repeat scroll 0 0 transparent; margin-bottom: 0; }
+	aside#sidebar-left { width: 335px; }	
+	#first_content { height: 455px; }
+	.flexslider { width: 66.5%; }
+	aside#sidebar-left hr { margin: 30px 0; }
+	.descricao_home { width: 32.87%; }
+}
+
+/* Smartphones, iPhone 3G,  (portrait and landscape) ———– */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+	/*body { background-color: green; }*/
+	#masthead .site-branding { text-align: center; height: 40px; margin-top: 10px; font-size: 4rem; }
+	.menu-toggle { font-size: 1.5rem; margin-top: 20px; z-index: 9999; }
+	.vcard, #second_content, aside#sidebar-left img, aside#sidebar-left h4, .flex-caption, .flex-direction-nav, .descricao_home img { display: none; }
+	aside#sidebar-left { height: 65%; }
+	aside#sidebar-left hr { margin: 5% 0; }
+	.content-area { width: 100%; }
+	header#masthead hgroup h1 { font-size: 0.5em; text-align: center; }
+	#site-navigation { position: relative; bottom: 25px; left: 10px; color: #FFFFFF; font-size: 1.3em; font-weight: bold;  height: 0; }	
+	aside#sidebar-left, .flexslider { width: 100%; }	
+	.flexslider { height: 190px !important; margin: 10px 0 15px !important; }
+	.flexslider h5.gallery-title { font-size: 1.5em; }
+	.flex-control-nav { bottom: 30px !important; }
+	/*aside#sidebar-left { height: 270px; }*/
+	#first_content { height: 270px; }
+	aside#sidebar-left h4 { font-size: 1.5em; }
+	aside#sidebar-left hr { margin: 10px 0 5px; }
+	.descricao_home { float: none; margin-right: 0; width: auto; }
+	.site-info { font-size: 0.7em; margin-left: 5%; margin-top: 5px;}
+	.rounded, #slides { border-radius: 0 0 0 0; }
+	
+}	
+
+/* Smartphones (landscape) ———– */
+@media only screen
+and (min-width : 321px) {	
+
+}
+
+/* Smartphones (portrait) ———– */
+@media only screen
+and (max-width : 320px) {
+
+}
+
+/* iPhone 4 ———– */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+}
+
+/* Large screens ———– */
+@media only screen
+and (min-width : 1824px) {
+	body { /*background-color: pink;*/ }
+	#first_content { height: 600px; }
+	aside#sidebar-left hr { margin: 75px 0; }
+}
+
+/* Very Large screens ———– */
+@media only screen
+and (min-width : 2000px) {
+	body { background-color: slateblue; }
 }

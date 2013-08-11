@@ -17,8 +17,8 @@ get_header(); ?>
 	<main id="main" class="site-main content-area centralizar" role="main">
 
 		<div id="first_content" class="site-content" role="main">
-		<?php get_template_part('template/slideshow', 'home'); ?>
 		<?php get_template_part('template/sidebar', 'esquerdahome'); ?>
+		<?php get_template_part('template/slideshow', 'home'); ?>		
 		</div>		
 
 		<div id="second_content" class="site-content" role="main">
