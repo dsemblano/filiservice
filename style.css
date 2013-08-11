@@ -123,7 +123,7 @@ hr {
 
 /* Text elements */
 p {
-	margin-bottom: 1.5em;
+	/*margin-bottom: 1.5em;*/
 }
 ul, ol {
 	margin: 0 0 1.5em 3em;
@@ -625,7 +625,7 @@ a:hover {
     /*background-color: whitesmoke;*/
     float: right;
 	background-color: transparent !important;
-	width: 66.5%;
+	width: 66.4%;
 	border: medium none !important;
 	box-shadow: none;
 	/*box-shadow: 0 3px 5px -4px #999999 !important;*/
@@ -700,8 +700,6 @@ a:hover {
 
 .flex-caption {
     font-size: 1.4rem;
-	max-height: 20px;
-    padding: 10px 0 14px 15px;
 }
 
 .flex-caption a {
@@ -709,7 +707,6 @@ a:hover {
 }
 
 #second_content {
-    margin-top: -15px;
     width: 100%;
     display: inline-block;
 }
@@ -732,7 +729,7 @@ a:hover {
 
 #Grid li {
   display: inline-block;
-  width: 32.9% !important;
+  width: 32.7% !important;
  /* padding-top: 23%;*/ /* Used instead of height to give elements fluid, width-based height */
 }
 
@@ -1086,6 +1083,8 @@ SEARCH FORM
 /* =Footer
 ----------------------------------------------- */
 
+.footer-info { padding: 5px 0 0; }
+
 .site-footer {
 	background-color: #5ABBE6;
 	color: #FFFFFF;
@@ -1096,20 +1095,14 @@ SEARCH FORM
 }
 
 .site-info {
-    float: left;
-    margin-left: 10%;
-    margin-top: 15px;
+    background-color: yellow;
+    margin: 0 auto;
+    width: 80%;
 }
 
 #footer-img {
-    float: right;
-	margin-right: 5%;
-    margin-top: 15px;
-}
-
-#footer-img  img {
-    height: auto;
-    max-width: 100%;
+	float: right;
+	margin-top: -15px;
 }
 
 
@@ -1257,7 +1250,7 @@ and (max-width : 1024px) {
 	.descricao_home h2 { font-size: 2.5rem; }
 	.descricao_home p { font-size: 1.3rem; }
 	#Grid li { height: 340px !important; }
-	#Grid li:last-child { float: right; margin: 0 0 0 5px; }
+	#Grid li:last-child { float: right; margin: 0 0 0 7px; }
 	#searchform #s { width: 78%; }
 }
 

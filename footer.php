@@ -8,15 +8,15 @@
  */
 ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="centralizar">
 			<div class="footer-info"><?php bloginfo(); ?> &copy; <?php echo date( 'Y' ); ?></div>
 			<a href="http://totalle.net"><span>Produzido por Totalle Edi&ccedil;&otilde;es Ltda</a> - (81) 3471.3705</span>
+			<div id="footer-img" class="pagewidth">
+				<a href="<?php echo get_option('home'); ?>/">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-filiservice-footer.png" class="logo" alt="logo">
+				</a>
+			</div>
 		</div><!-- .site-info -->
-		<div id="footer-img" class="pagewidth">
-			<a href="<?php echo get_option('home'); ?>/">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-filiservice-footer.png" class="logo" alt="logo">
-			</a>
-		</div>
 	</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
