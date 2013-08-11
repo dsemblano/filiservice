@@ -626,7 +626,6 @@ a:hover {
     float: right;
 	background-color: transparent !important;
 	width: 66.5%;
-	height: 100%;
 	border: medium none !important;
 	box-shadow: none;
 	/*box-shadow: 0 3px 5px -4px #999999 !important;*/
@@ -710,9 +709,9 @@ a:hover {
 }
 
 #second_content {
+    margin-top: -15px;
     width: 100%;
     display: inline-block;
-	margin-top: -10px;
 }
 
 /* Página Fabricantes */
@@ -733,9 +732,8 @@ a:hover {
 
 #Grid li {
   display: inline-block;
-  width: 23%;
+  width: 32.9% !important;
  /* padding-top: 23%;*/ /* Used instead of height to give elements fluid, width-based height */
-  margin-bottom: 2.5%;
 }
 
 .descricao_home {
@@ -1242,7 +1240,7 @@ and (max-width : 1024px) {
 	.content-area { width: 95%; }
 	.flexslider h5.gallery-title { font-size: 1.5em; }
 	aside#sidebar-left { width: 32.5%; }
-	#first_content { height: 342px; margin-top: 10px; }
+	#first_content { margin-top: 10px; }
 	header#masthead { background: url("assets/images/background-header.jpg") no-repeat scroll 0 0 transparent; }
 	header#masthead hr { background: url("assets/images/header-yellow.png") no-repeat scroll 0 0 transparent; margin-bottom: 0; }
 	select#qmt-fabricantes { font-size: 0.85em; }
@@ -1254,11 +1252,10 @@ and (max-width : 1024px) {
 	aside#sidebar-left #sidebar-left-wrapper { padding: 5px 10px 0; height: 180px; }
 	.descricao_home { width: 32.7%; }	
 	.flexslider { width: 66.5%; }
-	.flex-caption { font-size: 0.6em; padding: 5px 0 0 10px; }
+	.flex-caption { font-size: 0.6em; padding: 7px 0 0 10px; }
 	.flex-control-nav { bottom: 70px !important;	}	
 	.descricao_home h2 { font-size: 2.5rem; }
 	.descricao_home p { font-size: 1.3rem; }
-	#Grid { background-color: red; }
 	#Grid li { height: 340px !important; }
 	#Grid li:last-child { float: right; margin: 0 0 0 5px; }
 	#searchform #s { width: 78%; }
