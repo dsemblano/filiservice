@@ -700,6 +700,7 @@ a:hover {
 
 .flex-caption {
     font-size: 1.4rem;
+	padding: 5px 0 10px 10px;
 }
 
 .flex-caption a {
@@ -1234,7 +1235,7 @@ and (max-width : 1024px) {
 	.content-area { width: 95%; }
 	.flexslider h5.gallery-title { font-size: 1.5em; }
 	aside#sidebar-left { width: 32.5%; }
-	#first_content { margin-top: 10px; }
+	#first_content { margin: 10px 0; }
 	header#masthead { background: url("assets/images/background-header.jpg") no-repeat scroll 0 0 transparent; }
 	header#masthead hr { background: url("assets/images/header-yellow.png") no-repeat scroll 0 0 transparent; margin-bottom: 0; }
 	select#qmt-fabricantes { font-size: 0.85em; }
@@ -1245,8 +1246,8 @@ and (max-width : 1024px) {
 	aside#sidebar-left hr { margin: 5px 0; }
 	aside#sidebar-left #sidebar-left-wrapper { padding: 5px 10px 0; height: 180px; }
 	.descricao_home { width: 32.7%; }	
-	.flexslider { width: 66.5%; }
-	.flex-caption { font-size: 0.6em; padding: 7px 0 0 10px; }
+	.flexslider { width: 66%; }
+	.flex-caption { font-size: 0.6em; padding: 5px 0 8px 10px; }
 	.flex-control-nav { bottom: 70px !important;	}	
 	.descricao_home h2 { font-size: 2.5rem; }
 	.descricao_home p { font-size: 1.3rem; }
