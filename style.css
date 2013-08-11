@@ -1229,6 +1229,7 @@ and (max-width : 1024px) {
 	/*header#masthead { text-indent: 3%; }*/
 	/*body { background-color: red; }	*/
 	.centralizar { margin: 0 3% auto }
+	.menu-menu-container ul li { font-size: 1.2rem; }
 	#footer-img { display: none; }
 	.content-area { width: 95%; }
 	.flexslider h5.gallery-title { font-size: 1.5em; }
