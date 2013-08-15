@@ -3,7 +3,7 @@
 				<?php
 				$args = array(
 				'post_type' => 'produtos',
-				'posts_per_page' => 1,
+				'posts_per_page' => 6,
 				'meta_query' => array(
 					array(
 						'key' => 'wpcf-slideshow-cf',

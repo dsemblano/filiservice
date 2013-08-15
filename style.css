@@ -53,6 +53,19 @@ html {
 body {
 	background: #fff;
 }
+
+html, body, main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body > main {
+    height: auto;
+    min-height: 100%;
+}
+
 article,
 aside,
 details,
@@ -103,7 +116,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: #878787;
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -613,7 +626,6 @@ a:hover {
 .content-area {
     /*background-color: aqua;*/
 	margin-top: 15px;
-	margin-bottom: 10px;
 }
 
 #first_content {
@@ -673,7 +685,7 @@ a:hover {
     position: relative !important;
     right: 5px;
     text-align: right !important;
-    bottom: 100px !important;
+    bottom: 90px !important;
 }
 
 .flex-control-nav li {    
@@ -710,7 +722,7 @@ a:hover {
 #second_content {
     width: 100%;
     display: inline-block;
-	margin-top: 1%;
+	margin-top: -10px;
 }
 
 /* Página Fabricantes */
@@ -731,12 +743,11 @@ a:hover {
 
 #Grid li {
   display: inline-block;
-  width: 32.7% !important;
+  width: 32.7%;
  /* padding-top: 23%;*/ /* Used instead of height to give elements fluid, width-based height */
 }
 
 .descricao_home {
-	width: 33% !important;
 	font-size: 2rem;
 }
 
@@ -800,6 +811,7 @@ ul#Grid li:nth-child(1){
 	font-size: 0.85em;
 	/*color: #FA941D;*/
 	color: #808080; 
+	margin-bottom: 15px;
 }
 
 #breadcrumbs a:hover, #fabricante-lista li a h3:hover {
@@ -816,6 +828,8 @@ ul#Grid li:nth-child(1){
     font-weight: bold;    
     text-transform: uppercase;
 }
+.produtos_grid { }
+.produtos_grid li { width: 20% !important; }
 
 /* 
 PAGINAS
@@ -1089,7 +1103,11 @@ SEARCH FORM
 
 .site-footer {
 	background-color: #5ABBE6;
+	clear: both;
 	color: #FFFFFF;
+	margin: -3em auto 0;
+	position: relative;
+	z-index: 10;
 }
 
 .site-footer a{
@@ -1236,7 +1254,7 @@ and (max-width : 1024px) {
 	.content-area { width: 95%; }
 	.flexslider h5.gallery-title { font-size: 1.5em; }
 	aside#sidebar-left { width: 32.5%; }
-	#first_content { margin: 10px 0; }
+	#first_content { margin: 10px 0 0; }
 	header#masthead { background: url("assets/images/background-header.jpg") no-repeat scroll 0 0 transparent; }
 	header#masthead hr { background: url("assets/images/header-yellow.png") no-repeat scroll 0 0 transparent; margin-bottom: 0; }
 	select#qmt-fabricantes { font-size: 0.85em; }
@@ -1246,16 +1264,20 @@ and (max-width : 1024px) {
 	aside#sidebar-left #sidebar-left-wrapper, #busca_encontre, aside#sidebar-left h6 { margin: 0;}
 	aside#sidebar-left hr { margin: 5px 0; }
 	aside#sidebar-left #sidebar-left-wrapper { padding: 5px 10px 0; height: 180px; }
-	.descricao_home { width: 32.7%; }
-	.descricao_home	img { vertical-align: bottom; }
-	.flexslider { width: 66%; }
+	.flexslider { width: 66%; margin: 0 0 -10px !important; }
 	.flex-caption { font-size: 0.6em; padding: 5px 0 8px 10px; }
-	.flex-control-nav { bottom: 70px !important;	}	
+	.flex-control-nav { bottom: 70px !important;	}
+	.descricao_home { width: 32.7% !important; }
+	.descricao_home	img { vertical-align: bottom; }
 	.descricao_home h2 { font-size: 2.5rem; }
 	.descricao_home p { font-size: 1.3rem; }
-	#second_content { margin-top: 0; }
+	#second_content { margin-top: 0 !important; }
 	#Grid li:last-child { float: right; margin: 0 0 0 7px; }
 	#searchform #s { width: 78%; }
+	#breadcrumbs { margin: 10px 0 15px; }
+	article.produtos .entry-title { font-size: 1.5em; }
+	.entry-tax { font-size: 0.7em; margin-bottom: 5px; }
+	.entry-tax-outros { margin-top: 5px; }
 }
 
 /* iPads (landscape) ———– */

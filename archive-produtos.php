@@ -6,7 +6,7 @@
 
 		$termsquery = get_terms( 'fabricantes', 'hide_empty=0&parent=0' );
 		
-		echo '<ul id="Grid">';
+		echo '<ul id="Grid" class="produtos_grid">';
 		foreach ($termsquery as $terms) {
 			echo ciii_term_images( 'fabricantes', 'term_ids=' . $terms->term_id );
 		}
