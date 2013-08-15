@@ -700,7 +700,7 @@ a:hover {
 
 .flex-caption {
     font-size: 1.4rem;
-	padding: 5px 0 10px 10px;
+	padding: 5px 5px 10px 10px;
 }
 
 .flex-caption a {
@@ -710,6 +710,7 @@ a:hover {
 #second_content {
     width: 100%;
     display: inline-block;
+	margin-top: 1%;
 }
 
 /* Página Fabricantes */
@@ -1009,7 +1010,7 @@ aside#sidebar-left #searchform {
 #busca_taxonomia, .widget_taxonomy-drill-down {
 	/*background-color: red;*/
     display: inline-block;
-    margin: 0 !important;
+    margin-bottom: 2px;
     width: 100%;
 }
 
@@ -1245,13 +1246,14 @@ and (max-width : 1024px) {
 	aside#sidebar-left #sidebar-left-wrapper, #busca_encontre, aside#sidebar-left h6 { margin: 0;}
 	aside#sidebar-left hr { margin: 5px 0; }
 	aside#sidebar-left #sidebar-left-wrapper { padding: 5px 10px 0; height: 180px; }
-	.descricao_home { width: 32.7%; }	
+	.descricao_home { width: 32.7%; }
+	.descricao_home	img { vertical-align: bottom; }
 	.flexslider { width: 66%; }
 	.flex-caption { font-size: 0.6em; padding: 5px 0 8px 10px; }
 	.flex-control-nav { bottom: 70px !important;	}	
 	.descricao_home h2 { font-size: 2.5rem; }
 	.descricao_home p { font-size: 1.3rem; }
-	#Grid li { height: 340px !important; }
+	#second_content { margin-top: 0; }
 	#Grid li:last-child { float: right; margin: 0 0 0 7px; }
 	#searchform #s { width: 78%; }
 }
