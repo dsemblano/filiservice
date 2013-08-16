@@ -761,6 +761,12 @@ ul#Grid li:nth-child(1){
 	text-align: left;
 }
 
+.produtos-title {
+	color: #FA941D;
+    font-size: 2rem;
+	text-align: center;
+}
+
 #Grid:after {
   content: '';
   display: inline-block;
