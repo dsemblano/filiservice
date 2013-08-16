@@ -495,9 +495,7 @@ a:hover {
 	margin-top: 20px;
 }
 
-#masthead .site-branding h1{
-    /*background-color: yellow;*/
-}
+.site-description { display: none; }
 
 #masthead .site-branding a {
     color: #FFFFFF;
