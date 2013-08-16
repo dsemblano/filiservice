@@ -1266,7 +1266,7 @@ and (max-width : 1024px) {
 	aside#sidebar-left #sidebar-left-wrapper { padding: 5px 10px 0; height: 180px; }
 	.flexslider { width: 66%; margin: 0 0 -10px !important; }
 	.flex-caption { font-size: 0.6em; padding: 5px 0 8px 10px; }
-	.flex-control-nav { bottom: 70px !important;	}
+	.flex-control-nav { bottom: 60px !important;	}
 	.descricao_home { width: 32.7% !important; }
 	.descricao_home	img { vertical-align: bottom; }
 	.descricao_home h2 { font-size: 2.5rem; }
@@ -1291,6 +1291,8 @@ and (orientation : landscape) {
 		font-size: 1rem;
 	}
 	#masthead .vcard .tel { }
+	.flexslider .slides img { height: 265px; }
+
 }
 
 /* iPads (portrait) ———– */
@@ -1304,11 +1306,15 @@ and (orientation : portrait) {
 		font-size: 1rem;
 	}
 	#masthead .vcard .tel { }
+	.flexslider .slides img { height: 235px; }
 }
 
 /* Desktops and laptops ———– */
 @media only screen
 and (min-width : 1224px) {
+	.flexslider .slides img { height: 350px; }
+	.flex-control-nav { bottom: 70px !important; }
+
 }
 
 	/* Mac Pro */

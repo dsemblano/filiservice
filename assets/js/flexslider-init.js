@@ -6,6 +6,7 @@
 			pauseOnHover: true,
 			animationLoop: true,
 			directionNav: true,
+			slideshow: false,
 		    controlsContainer: '.flex-container'
 	    });
     });
