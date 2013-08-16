@@ -838,9 +838,8 @@ ul#Grid li:nth-child(1){
 /* 
 PAGINAS
 ================================================ */
-.page {
 
-}
+.entry-content-page { margin-top: 15px; }
 
 /* Pagina Contato */
 
@@ -852,7 +851,7 @@ PAGINAS
 	margin-bottom: 20px;
 	padding: 3px 5px 3px 10px;
 	text-transform: uppercase;
-	width: 50%;
+	width: 55%;
 }
 
 .pagina-contato i.icon-comment { margin-left: 10%; }
@@ -868,8 +867,8 @@ PAGINAS
 }
 
 .wpcf7-form-control-wrap input { margin: 0 0 20px; width: 100%; }
-
 #mapa-contato { float: left; }
+.wpcf7-form-control { margin-top: 10px; }
 
 .mapp-layout {
 	margin: 0;
@@ -1274,7 +1273,7 @@ and (max-width : 1024px) {
 	.descricao_home { width: 32.7% !important; }
 	.descricao_home	img { vertical-align: bottom; }
 	.descricao_home h2 { font-size: 2.5rem; }
-	.descricao_home p { font-size: 1.3rem; }
+	.descricao_home p { font-size: 1.3rem; }	
 	#second_content { margin-top: 0 !important; }
 	#Grid li:last-child { float: right; margin: 0 0 0 7px; }
 	#searchform #s { width: 78%; }
@@ -1296,6 +1295,7 @@ and (orientation : landscape) {
 	}
 	#masthead .vcard .tel { }
 	.flexslider .slides img { height: 265px; }
+	#mapp0_layout { width: 570px !important; }
 
 }
 
@@ -1311,6 +1311,8 @@ and (orientation : portrait) {
 	}
 	#masthead .vcard .tel { }
 	.flexslider .slides img { height: 235px; }
+	#mapp0_layout { width: 425px !important; }
+	.pagina-contato { width: 75%;}
 }
 
 /* Desktops and laptops ———– */
