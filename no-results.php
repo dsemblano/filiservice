@@ -13,15 +13,10 @@
 		<h1 class="entry-title"><?php _e( 'Nenhum Resultado Encontrado', 'filiservice' ); ?></h1>
 	</header><!-- .page-header -->
 
-	<div class="entry-content-noresults">	
-
+	<div class="entry-content-noresults">
 			<p>
 				<?php _e( 'Por favor, tente novamente uma nova busca ou uma das categorias ou nossos &uacute;ltimos produtos abaixo:', 'filiservice' ); ?>
-			</p>
-				
-			
-			<?php get_search_form(); ?>
-					
+			</p>			
 		<?php if ( filiservice_categorized_blog() ) : // Lista categorias e termos - Only show the widget if site has multiple categories. ?>
 		
 			<ul class="widget widget_categories">

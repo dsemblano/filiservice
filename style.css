@@ -1091,6 +1091,7 @@ SEARCH FORM
 /* 404 page Page Not Found */
 
 .entry-content-noresults { margin-top: 15px; }
+.entry-content-noresults .widget_categories { margin: 10px 0 15px; }
 .no-results .search-form { margin: 5px 0 10px; }
 .no-results .search-form .search-field { width: 50%; margin: 10px 10px 10px 0; }
 .no-results .widget_categories .widgettitle { margin: 0; width: 50%; }
