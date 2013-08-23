@@ -42,6 +42,7 @@ function filiservice_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'post_image', 1000, 800 );
 	add_image_size( 'taxonomy-pages', 600, 276 );
+	add_image_size( 'category-pages', 200, 135, true );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.

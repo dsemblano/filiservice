@@ -7,12 +7,19 @@
 
 get_header(); ?>
 
-	<main id="main" class="site-main content-area centralizar" role="main">
+	<main id="main" class="busca content-area centralizar" role="main">
 
 	<?php if ( have_posts() ) : ?>
 
 		<header class="page-header">
-			<h1 class="page-title"><?php printf( __( 'Resultados para: %s', 'filiservice' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+		
+			<div id="nova-busca">
+				<h1>Nova busca: </h1>
+				<?php get_search_form(); ?>
+			</div>
+			
+			<h1 class="entry-title"><?php printf( __( 'Resultados para: %s', 'filiservice' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+
 		</header><!-- .page-header -->
 
 		<?php /* Start the Loop */ ?>
@@ -22,13 +29,16 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php filiservice_content_nav( 'nav-below' ); ?>
-
 	<?php else : ?>
 
 		<?php get_template_part( 'no-results', 'search' ); ?>
 
 	<?php endif; ?>
+	
+	<div id="nova-busca">
+		<h1>Nova busca: </h1>
+		<?php get_search_form(); ?>
+	</div>
 
 	</main><!-- #main -->
 
